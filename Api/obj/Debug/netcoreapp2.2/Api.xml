@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.AuthController.Post(Application.DTO.AuthDto)">
+             <summary>
+             For Login please type only your username and password!
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "username": "validusername",
+                    "password": "validpassword"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.BrandsController.Get(Application.Searches.BrandSearch)">
+             <summary>
+             Returns all brands that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "brandName": "Assics"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.BrandsController.Post(Application.DTO.BrandDto)">
+             <summary>
+             Post a Brand
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "brandName": "Assics"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.CategoriesController.Get(Application.Searches.CategorySearch)">
+             <summary>
+             Returns all categories that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Assics"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.CategoriesController.Post(Application.DTO.CategoryDto)">
+             <summary>
+             Post category
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Socks"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.CategoriesController.Put(System.Int32,Application.DTO.CategoryDto)">
+             <summary>
+             Edit category
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /Todo
+                 {
+            
+                    "name": "New Name"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.CommentsController.Get(Application.Searches.CommentSearch)">
+             <summary>
+             Returns all comments that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "userId": 2,
+                    "productId":4,
+                    "commentDesc":"Some text..."
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.CommentsController.Post(Application.DTO.CommentDto)">
+             <summary>
+             Post a comment
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "userId": 2,
+                    "productId":4,
+                    "commentDesc":"Some text..."
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.OrdersController.Get(Application.Searches.OrderSearch)">
+             <summary>
+             Returns all orders that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "userId": 3,
+                    "quantity":5
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.OrdersController.Post(Application.DTO.CreateOrderDto)">
+             <summary>
+             Post an order
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "userId": 3,
+                    "quantity":5
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.ProductsCategoriesController.Get(Application.Searches.ProductCategorySearch)">
+            <summary>
+            Returns all products with categories that match provided query
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.ProductsController.Get(Application.Searches.ProductSearch)">
+             <summary>
+             Returns all products that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Product",
+                    "description": "Some text...",
+                    "availableCount": 30,
+                    "brandId":3,
+                    "price": 3400,
+                    "imageSrc": "image.jpg"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.ProductsController.Post(Api.UploadProduct.Product)">
+             <summary>
+             Post a product
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "name": "Product",
+                    "description": "Some text...",
+                    "availableCount": 30,
+                    "brandId":3,
+                    "price": 3400,
+                    "imageSrc": "image.jpg"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.ProductsController.Put(System.Int32,Api.UploadProduct.Product)">
+             <summary>
+             Edit product
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+              
+                    "name": "Product",
+                    "description": "Some text...",
+                    "availableCount": 30,
+                    "brandId":3,
+                    "price": 3400,
+                    "imageSrc": "image.jpg"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.ProductsOrdersController.Get(Application.Searches.ProductOrderSearch)">
+            <summary>
+            Returns all products with orders that match provided query
+            </summary>
+        </member>
+        <member name="M:Api.Controllers.RolesController.Get(Application.Searches.RoleSearch)">
+             <summary>
+             Returns all roles that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "roleName": "Moderator"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.RolesController.Post(Application.DTO.RoleDto)">
+             <summary>
+             Post a role
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "roleName": "Moderator"
+                    
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.UsersController.Get(Application.Searches.UserSearch)">
+             <summary>
+             Returns all users that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "firstName": "Mark",
+                    "lastName": "Jones",
+                     "username": "mark456",
+                    "password": "markpass",
+                    "roleId": 1
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.UsersController.Post(Application.DTO.UserDto)">
+             <summary>
+             Post a user
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "firstName": "Mark",
+                    "lastName": "Jones",
+                     "username": "mark456",
+                    "password": "markpass",
+                    "roleId": 1
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Api.Controllers.UsersController.Put(System.Int32,Application.DTO.UserDto)">
+             <summary>
+             Edit user
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /Todo
+                 {
+                   
+                    "firstName": "New name",
+                    "lastName": "New lastname",
+                     "username": "New username",
+                    "password": "New password",
+                    "roleId": 1
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>
